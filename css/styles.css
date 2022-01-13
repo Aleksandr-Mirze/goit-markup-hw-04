@@ -140,7 +140,8 @@ body {
   color: var(--var-logo-web-color);
 }
 
-.header-advantages {
+.header-advantages,
+.partners-advantages {
   list-style: none;
   display: flex;
   background-color: var var(--advant-aims);
@@ -157,6 +158,17 @@ body {
   margin-bottom: 30px;
 }
 
+.partners-pic {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--var-white-color);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 .advant-pic:focus,
 .advant-pic:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -174,6 +186,11 @@ body {
 .icon-advant {
   width: 70px;
   height: 70px;
+}
+
+.pic-advant {
+  width: 106px;
+  height: 60;
 }
 
 .item:not(:last-child) {
@@ -215,11 +232,11 @@ body {
   padding: 200px 0;
   text-align: center;
   background-color: var(--var-bcg-color);
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/img-hero.jpg"); */
+    url("../images/img-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -235,7 +252,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 696px;
-  background: var(--var-bcg-color);
+
   margin-bottom: 30px;
 }
 
@@ -302,6 +319,7 @@ body {
 }
 
 .section,
+.partners,
 .section-cards {
   padding: 94px 0;
 }
