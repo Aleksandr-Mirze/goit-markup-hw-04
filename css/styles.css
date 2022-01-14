@@ -159,6 +159,7 @@ body {
 }
 
 .partners-pic {
+  cursor: pointer;
   width: 170px;
   height: 92px;
   display: flex;
