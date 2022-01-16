@@ -64,6 +64,10 @@ body {
   /* outline: 2px solid red; */
 }
 
+div {
+  /* outline: 2px solid blue; */
+}
+
 .container-nav {
   display: flex;
   align-items: center;
@@ -102,6 +106,20 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: auto;
+}
+
+.header-pic {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.header-mail {
+  align-items: center;
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  fill: var(--var-logo-web-color);
 }
 
 .filter-nav-link {
@@ -170,9 +188,19 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.advant-pic:focus,
-.advant-pic:hover {
+
+.partners-pic:focus,
+.partners-pic:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.partners-links:focus .pic-advant,
+.partners-links:hover .pic-advant {
+  fill: var(--var-logo-web-color);
+}
+
+.partners-links {
+  fill: #afb1b8;
 }
 
 .header-advantages-title {
@@ -428,9 +456,9 @@ body {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  /* border-radius: 0px 0px 4px 4px; */
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card-team-portfolio {
@@ -442,10 +470,7 @@ body {
   /* margin-bottom: 30px; */
 }
 
-.card-team:hover,
-.card-team:focus,
-.card-team-portfolio:hover,
-.card-team-portfolio:focus {
+.item-cards:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -488,6 +513,16 @@ body {
   text-decoration: none;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  width: 231px;
+  height: 81px;
+}
+
 .footer-link {
   /* padding-top: 20px; */
 }
@@ -502,4 +537,53 @@ body {
 .link-nav-footer:focus,
 .link-nav-footer:hover {
   color: var(--var-white-color);
+}
+
+.footer-right-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+.footer-right-box {
+  width: 206px;
+  height: 80px;
+  justify-content: center;
+}
+
+.footer-right-box-title {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--var-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-right-site {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right-logo {
+  fill: var(--var-white-color);
+}
+
+.footer-right-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-right-site:hover,
+.footer-right-site:focus {
+  background-color: var(--var-logo-web-color);
 }
