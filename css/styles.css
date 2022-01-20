@@ -114,16 +114,17 @@ body {
 }
 
 .header-mail {
+  fill: #757575;
   margin-right: 10px;
 }
 
+/* .header-mail:focus,
+.header-mail:hover {
+  fill: var(--var-logo-web-color);
+} */
+
 .mail {
   margin-right: 50px;
-}
-
-.header-mail:hover,
-.header-mail:focus {
-  fill: var(--var-logo-web-color);
 }
 
 .filter-nav-link {
@@ -153,14 +154,20 @@ body {
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--var-logo-web-color);
-}
-
 .link-color {
   color: var(--var-position-color);
 }
+
+.link-color:hover,
+.link-color:focus {
+  color: var(--var-logo-web-color);
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  fill: var(--var-logo-web-color);
+}
+
 .current {
   color: var(--var-logo-web-color);
 }
