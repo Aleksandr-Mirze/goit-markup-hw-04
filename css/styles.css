@@ -114,7 +114,6 @@ body {
 }
 
 .header-mail {
-  fill: #757575;
   margin-right: 10px;
 }
 
@@ -155,6 +154,7 @@ body {
 }
 
 .link-color {
+  display: inline;
   color: var(--var-position-color);
 }
 
@@ -163,6 +163,7 @@ body {
   color: var(--var-logo-web-color);
 }
 
+.header-mail::after,
 .header-mail:hover,
 .header-mail:focus {
   fill: var(--var-logo-web-color);
