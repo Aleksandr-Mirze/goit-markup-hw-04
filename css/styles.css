@@ -154,7 +154,6 @@ body {
 }
 
 .link-color {
-  display: inline;
   color: var(--var-position-color);
 }
 
@@ -163,9 +162,11 @@ body {
   color: var(--var-logo-web-color);
 }
 
-.header-mail::after,
-.header-mail:hover,
-.header-mail:focus {
+.header-mail {
+  fill: var(--var-position-color);
+}
+
+.link-color:hover > .header-mail {
   fill: var(--var-logo-web-color);
 }
 
