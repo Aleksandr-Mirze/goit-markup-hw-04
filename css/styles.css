@@ -192,24 +192,21 @@ body {
   margin-bottom: 30px;
 }
 
-.item-border:focus,
-.item-border:hover {
-  border: 1px solid var(--var-logo-web-color);
-  border-radius: 4px;
+.item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.partners-links:focus .pic-advant,
-.partners-links:hover .pic-advant {
+.partners-links:focus,
+.partners-links:hover {
   fill: var(--var-logo-web-color);
+  border-color: #188ce8;
 }
 
 .partners-links {
   width: 170px;
   height: 92px;
-  display: flex;
-  /* text-align: flex; */
-  justify-content: center;
-  align-items: center;
+  display: block;
+  padding: 16px 32px;
   background-color: var(--var-white-color);
   border: 1px solid #afb1b8;
   box-sizing: border-box;
